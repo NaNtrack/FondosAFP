@@ -1,0 +1,31 @@
+.share-post {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom:20px;
+}
+
+.share-post a {
+    display: inline-block;
+    color: white;
+    padding: 0 1em;
+    line-height: 2em;
+    margin: 0.1em;
+}
+
+    .share-post a:hover {
+        padding: 0 1.5em;
+        text-decoration: none;
+    }
+
+.share-post .facebook {
+    background: #3b5998;
+}
+
+.share-post .twitter {
+    background: #55acee;
+}
+
+.share-post .googleplus {
+    background: #dd4b39;
+}

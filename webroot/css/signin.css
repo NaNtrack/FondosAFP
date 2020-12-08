@@ -1,0 +1,97 @@
+.form-signin {
+  max-width: 330px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signin button[type="submit"] {
+  margin-bottom: 20px;
+}
+
+.google{
+  border:0px !important;
+  height:46px;
+  width: 191px;
+  background-image: url('/img/btn_google_signin_light_normal_web.png');
+  text-indent: -9999999px;
+}
+
+.google:focus, .google:hover{
+  background-image: url('/img/btn_google_signin_light_pressed_web.png');
+}
+
+.google:active{
+  background-image: url('/img/btn_google_signin_light_pressed_web.png');
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    .google{
+      border:0px !important;
+      height:46px;
+      width: 191px;
+      background-size: 192px 46px;
+      background-image: url('/img/btn_google_signin_light_normal_web@2x.png');
+      text-indent: -9999999px;
+    }
+
+    .google:focus, .google:hover{
+      background-image: url('/img/btn_google_signin_light_pressed_web@2x.png');
+    }
+
+    .google:active{
+      background-image: url('/img/btn_google_signin_light_pressed_web@2x.png');
+    }
+}
+
+.facebook {
+  background-color: #3f5b96;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 10.5pt;
+  height: 43px;
+  line-height: 30px;
+  text-align: center;
+  width: 190px;
+}
+
+.facebook:hover, .facebook:active, .facebook:focus{
+  background-color: #3f5b96!important;
+  color: #fff !important;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(165,165,165,1);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(165,165,165,1);
+  box-shadow: 1px 1px 2px 1px rgba(165,165,165,1);
+}
+
+.facebook i {
+  float: left;
+  margin: 2px 5px 0;
+  width: 15px;
+}

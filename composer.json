@@ -1,0 +1,49 @@
+{
+    "name": "Fondos AFP",
+    "description": "Información gratuita y actualizada de las AFPs de Chile.",
+    "homepage": "http://cakephp.org",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "cakephp/cakephp": "3.6.5",
+        "mobiledetect/mobiledetectlib": "2.8.32",
+        "cakephp/migrations": "1.8.1",
+        "cakephp/plugin-installer": "1.1.0",
+        "guzzlehttp/guzzle": "6.3.3",
+        "monolog/monolog": "1.23.0",
+        "google/apiclient": "v2.2.1",
+        "asika/pdf2text": "1.0.5",
+        "aws/aws-sdk-php": "3.61.8",
+        "xthiago/pdf-version-converter": "dev-master",
+        "facebook/graph-sdk": "5.7.0",
+        "kreait/firebase-php": "5.1.0"
+    },
+    "require-dev": {
+        "psy/psysh": "v0.9.6",
+        "cakephp/debug_kit": "3.16.3",
+        "cakephp/bake": "1.8.0",
+        "google/auth": "v1.8.0"
+    },
+    "suggest": {
+        "phpunit/phpunit": "Allows automated tests to be run without system-wide install.",
+        "cakephp/cakephp-codesniffer": "Allows to check the code against the coding standards used in CakePHP."
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": "App\\Console\\Installer::postInstall",
+        "post-create-project-cmd": "App\\Console\\Installer::postInstall",
+        "post-autoload-dump": "Cake\\Composer\\Installer\\PluginInstaller::postAutoloadDump"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
