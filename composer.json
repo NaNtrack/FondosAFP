@@ -1,7 +1,7 @@
 {
-    "name": "Fondos AFP",
+    "name": "nantrack/fondosafp",
     "description": "Información gratuita y actualizada de las AFPs de Chile.",
-    "homepage": "http://cakephp.org",
+    "homepage": "https://fondosafp.com",
     "type": "project",
     "license": "MIT",
     "require": {

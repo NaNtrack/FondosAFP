@@ -6,23 +6,23 @@ Información gratuita y actualizada de los fondos de pensiones de las AFPs de Ch
 
 ## Servicios relacionados
 
-*  [Circle CI](https://circleci.com/bb/NaNtrack/fondosafp)
-*  [Codecov](https://codecov.io/bb/nantrack/fondosafp)
+-   [Circle CI](https://circleci.com/bb/NaNtrack/fondosafp)
+-   [Codecov](https://codecov.io/bb/nantrack/fondosafp)
 
 ## Instalación
 
 # Paso 1
+
 ```
-    git clone git@github.com:FondosAFP/website.git
-    cd website/
+    git clone git@github.com:NaNtrack/FondosAFP.git
+    cd FondosAFP/
     composer install
 ```
 
-
 ## Configuración
 
-*  Copiar el archivo **config/app.default.php** a **config/app.php**
-*  Configurar correctamente el **Datasource default**
+-   Copiar el archivo **config/app.default.php** a **config/app.php**
+-   Configurar correctamente el **Datasource default**
 
 ```php
     'Datasources' => [
@@ -35,16 +35,17 @@ Información gratuita y actualizada de los fondos de pensiones de las AFPs de Ch
             'database' => '<nombre de la base de datos>',
             ...
 ```
-* Crear la base de datos fondosafp en mysql y correr el archivo **config/schema/fondosafp.sql**
 
-* Correr las migraciones
+-   Crear la base de datos fondosafp en mysql y correr el archivo **config/schema/fondosafp.sql**
+
+-   Correr las migraciones
 
 ```
     bin/cake migrations migrate
 ```
 
-*  Configurar las claves de Google para el inicio de sesión
-   (https://console.developers.google.com/apis/credentials?project=YOUR-PROJECT-ID)
+-   Configurar las claves de Google para el inicio de sesión
+    (https://console.developers.google.com/apis/credentials?project=YOUR-PROJECT-ID)
 
 ```php
     'Google' => [
@@ -55,8 +56,8 @@ Información gratuita y actualizada de los fondos de pensiones de las AFPs de Ch
     ],
 ```
 
-*  Configurar las claves de Facebook para el inicio de sesión
-   (https://developers.facebook.com/apps/)
+-   Configurar las claves de Facebook para el inicio de sesión
+    (https://developers.facebook.com/apps/)
 
 ```php
     'Facebook' => [
